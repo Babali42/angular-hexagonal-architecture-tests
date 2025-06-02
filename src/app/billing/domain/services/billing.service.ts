@@ -1,15 +1,11 @@
-import {Inject, Injectable} from '@angular/core';
 import { SubscriptionProvider } from '../ports/subscription-provider.port';
 import { InvoiceRepository } from '../ports/invoice-repository.port';
 import { Invoice, InvoiceItem } from '../models/invoice.model';
-import {SUBSCRIPTION_REPOSITORY} from '../../../subscription/infrastructure/subscription.module';
-import {INVOICE_REPOSITORY, SUBSCRIPTION_PROVIDER} from '../../infrastructure/billing.module';
 
-@Injectable({ providedIn: 'root' })
 export class BillingService {
   constructor(
-    @Inject(SUBSCRIPTION_PROVIDER) private subscriptionProvider: SubscriptionProvider,
-    @Inject(INVOICE_REPOSITORY) private invoiceRepository: InvoiceRepository
+    private subscriptionProvider: SubscriptionProvider,
+    private invoiceRepository: InvoiceRepository
   ) {}
 
   async generateInvoice(customerId: string): Promise<Invoice> {

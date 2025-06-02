@@ -1,5 +1,6 @@
-import { SubscriptionDTO } from '../../../shared/types/subscription-dto';
+import {SubscriptionData} from './subscription-data';
+
 
 export interface SubscriptionProvider {
-  getActiveSubscriptionsForCustomer(customerId: string): Promise<SubscriptionDTO[] | undefined>;
+  getActiveSubscriptionsForCustomer(customerId: string): Promise<SubscriptionData[] | undefined>;
 }

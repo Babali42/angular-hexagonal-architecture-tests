@@ -1,14 +1,11 @@
-import {Inject, Injectable} from '@angular/core';
 import { Subscription } from '../models/subscription.model';
 import { SubscriptionRepository } from '../ports/subscription-repository.port';
 import { BillingNotifier } from '../ports/billing-notifier.port';
-import {BILLING_NOTIFIER, SUBSCRIPTION_REPOSITORY} from '../../infrastructure/subscription.module';
 
-@Injectable({ providedIn: 'root' })
 export class SubscriptionService {
   constructor(
-    @Inject(SUBSCRIPTION_REPOSITORY)  private subscriptionRepo: SubscriptionRepository,
-    @Inject(BILLING_NOTIFIER) private billingNotifier: BillingNotifier
+    private subscriptionRepo: SubscriptionRepository,
+    private billingNotifier: BillingNotifier
   ) {}
 
   async createSubscription(customerId: string, planName: string, monthlyCost: number) {
