@@ -1,59 +1,35 @@
-# AngularHexagonalArchitectureTests
+# Tests d'architecture sur une application angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+## Commandes
 
-## Development server
+```npm install```
 
-To start a local development server, run:
+```npm run test-jest```
 
-```bash
-ng serve
-```
+## Slides
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+![Slide1](slides/0001.jpg)
 
-## Code scaffolding
+![Slide1](slides/0002.jpg)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+![Slide1](slides/0003.jpg)
 
-```bash
-ng generate component component-name
-```
+![Slide1](slides/0004.jpg)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+![Slide1](slides/0005.jpg)
 
-```bash
-ng generate --help
-```
+![Slide1](slides/0006.jpg)
 
-## Building
+![Slide1](slides/0007.jpg)
 
-To build the project run:
+![Slide1](slides/0008.jpg)
 
-```bash
-ng build
-```
+![Slide1](slides/0009.jpg)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+![Slide1](slides/0010.jpg)
 
-## Running unit tests
+![Slide1](slides/0011.jpg)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+![Slide1](slides/0012.jpg)
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
